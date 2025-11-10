@@ -16,7 +16,7 @@ from langchain_groq import ChatGroq
 # ---------------- Model Setup ----------------
 model = ChatGroq(
     model="llama-3.1-8b-instant",
-    groq_api_key="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"
+    groq_api_key="YOUR_API_KEY"
     # (https://console.groq.com/keys)
 )
 
@@ -133,5 +133,6 @@ if __name__ == "__main__":
             state["messages"].append(msg)
             if hasattr(msg, "content"):
                 print("Bot:", msg.content)
+
 
         print("----------------\n")
