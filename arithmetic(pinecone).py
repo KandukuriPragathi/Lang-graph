@@ -19,7 +19,7 @@ import os, time
 # =========================================================
 # 🔐 1️⃣  PINECONE SETUP
 # =========================================================
-PINECONE_API_KEY = "pcsk_7MmgmD_N1nwWacYopgdRA8BSRcFXQRURRBHCyutMJp72mLmSAxCwdbD98X8zj9T96KyfYV"
+PINECONE_API_KEY = "YOUR_API_KEY"
 # https://docs.pinecone.io/reference/api/2025-04/admin/create_api_key?utm_source=chatgpt.com
 INDEX_NAME = "groq-math-memory"
 ENVIRONMENT = "us-east-1"
@@ -43,7 +43,7 @@ embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 # =========================================================
 model = ChatGroq(
     model="llama-3.1-8b-instant",
-    groq_api_key="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",
+    groq_api_key="YOUR_API_KEY",
 ) # (https://console.groq.com/keys)
 
 # ---------------- Define Tools ----------------
@@ -228,3 +228,4 @@ if __name__ == "__main__":
                     print(f"[Memory Error]: {e}")
 
         print("----------------\n")
+
